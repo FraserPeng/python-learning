@@ -10,7 +10,7 @@ def foo():
     try:
         print("try...")
         r = 10 / 0
-        print("result....")
+        print("result....", r)
     except ZeroDivisionError as e:
         print("except:", e)
         raise ZeroDivisionError("这是一个错误")
@@ -38,7 +38,7 @@ def main():
 # p 查看变量
 # q 退出
 
-# pdb.set_trace() 
+# pdb.set_trace()
 
 
 def foos(s):

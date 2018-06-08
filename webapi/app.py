@@ -2,6 +2,7 @@ from aiohttp import web
 import asyncio
 import logging
 import json
+from coreweb import add_routes
 logging.basicConfig(level=logging.INFO)
 
 routes = web.RouteTableDef()
@@ -19,10 +20,10 @@ async def logger_factory(app, handler):
 # 总结下来一个请求在服务端收到后的方法调用顺序是:
 #     	logger_factory->response_factory->RequestHandler().__call__->get或post->handler
 # 那么结果处理的情况就是:
-#     	由handler构造出要返回的具体对象
-#		然后在这个返回的对象上加上'__method__'和'__route__'属性，以标识别这个对象并使接下来的程序容易处理
-#		RequestHandler目的就是从URL函数中分析其需要接收的参数，从request中获取必要的参数，调用URL函数,然后把结果返回给response_factory
-#		response_factory在拿到经过处理后的对象，经过一系列对象类型和格式的判断，构造出正确web.Response对象，以正确的方式返回给客户端
+# 由handler构造出要返回的具体对象
+# 然后在这个返回的对象上加上'__method__'和'__route__'属性，以标识别这个对象并使接下来的程序容易处理
+# RequestHandler目的就是从URL函数中分析其需要接收的参数，从request中获取必要的参数，调用URL函数,然后把结果返回给response_factory
+# response_factory在拿到经过处理后的对象，经过一系列对象类型和格式的判断，构造出正确web.Response对象，以正确的方式返回给客户端
 # 在这个过程中，我们只用关心我们的handler的处理就好了，其他的都走统一的通道，如果需要差异化处理，就在通道中选择适合的地方添加处理代码
 
 
@@ -91,15 +92,22 @@ async def response_factory(app, handler):
 @routes.get('/{name}')
 async def handle(request):
     name = request.match_info.get('name', "Anonymous")
-    text = {"Hello,": name}
+    text = {"Hello": name}
     return web.json_response(text)
 
 
 async def init(loop):
+    # 创建数据库连接池，db参数传配置文件里的配置db
+        # yield from orm.create_pool(loop=loop, **configs.db)
+    # middlewares设置两个中间处理函数
+        # middlewares中的每个factory接受两个参数，app 和 handler(即middlewares中得下一个handler)
+        # 譬如这里logger_factory的handler参数其实就是response_factory()
+        # middlewares的最后一个元素的Handler会通过routes查找到相应的，其实就是routes注册的对应handler
+
     app = web.Application(loop=loop, middlewares=[
         logger_factory, response_factory
     ])
-    app.add_routes(routes)
+    add_routes(app, 'handlers')
     srv = await loop.create_server(app.make_handler(), '127.0.0.1',
                                    8000)
     print('Server started at http://127.0.0.1:8000...')

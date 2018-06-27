@@ -1,0 +1,390 @@
+[
+    {
+        "name": "北京北",
+        "code": "VAP"
+    },
+    {
+        "name": "北京东",
+        "code": "BOP"
+    },
+    {
+        "name": "北京",
+        "code": "BJP"
+    },
+    {
+        "name": "北京南",
+        "code": "VNP"
+    },
+    {
+        "name": "北京西",
+        "code": "BXP"
+    },
+    {
+        "name": "天津北",
+        "code": "TBP"
+    },
+    {
+        "name": "天津",
+        "code": "TJP"
+    },
+    {
+        "name": "天津南",
+        "code": "TIP"
+    },
+    {
+        "name": "天津西",
+        "code": "TXP"
+    },
+    {
+        "name": "沈阳",
+        "code": "SYT"
+    },
+    {
+        "name": "沈阳北",
+        "code": "SBT"
+    },
+    {
+        "name": "沈阳东",
+        "code": "SDT"
+    },
+    {
+        "name": "沈阳南",
+        "code": "SOT"
+    },
+    {
+        "name": "长春",
+        "code": "CCT"
+    },
+    {
+        "name": "长春南",
+        "code": "CET"
+    },
+    {
+        "name": "长春西",
+        "code": "CRT"
+    },
+    {
+        "name": "哈尔滨",
+        "code": "HBB"
+    },
+    {
+        "name": "哈尔滨东",
+        "code": "VBB"
+    },
+    {
+        "name": "哈尔滨西",
+        "code": "VAB"
+    },
+    {
+        "name": "哈尔滨北",
+        "code": "HTB"
+    },
+    {
+        "name": "石家庄北",
+        "code": "VVP"
+    },
+    {
+        "name": "石家庄",
+        "code": "SJP"
+    },
+    {
+        "name": "石家庄东",
+        "code": "SXP"
+    },
+    {
+        "name": "呼和浩特东",
+        "code": "NDC"
+    },
+    {
+        "name": "呼和浩特",
+        "code": "HHC"
+    },
+    {
+        "name": "包头东",
+        "code": "BDC"
+    },
+    {
+        "name": "包头",
+        "code": "BTC"
+    },
+    {
+        "name": "包头 东",
+        "code": "FDC"
+    },
+    {
+        "name": "郑州",
+        "code": "ZZF"
+    },
+    {
+        "name": "郑州西",
+        "code": "XPF"
+    },
+    {
+        "name": "郑州东",
+        "code": "ZAF"
+    },
+    {
+        "name": "济南",
+        "code": "JNK"
+    },
+    {
+        "name": "济南西",
+        "code": "JGK"
+    },
+    {
+        "name": "青岛",
+        "code": "QDK"
+    },
+    {
+        "name": "青岛北",
+        "code": "QHK"
+    },
+    {
+        "name": "南京",
+        "code": "NJH"
+    },
+    {
+        "name": "南京南",
+        "code": "NKH"
+    },
+    {
+        "name": "上海",
+        "code": "SHH"
+    },
+    {
+        "name": "上海南",
+        "code": "SNH"
+    },
+    {
+        "name": "上海虹桥",
+        "code": "AOH"
+    },
+    {
+        "name": "上海西",
+        "code": "SXH"
+    },
+    {
+        "name": "杭州东",
+        "code": "HGH"
+    },
+    {
+        "name": "杭州",
+        "code": "HZH"
+    },
+    {
+        "name": "杭州南",
+        "code": "XHH"
+    },
+    {
+        "name": "武汉",
+        "code": "WHN"
+    },
+    {
+        "name": "南昌",
+        "code": "NCG"
+    },
+    {
+        "name": "南昌西",
+        "code": "NXG"
+    },
+    {
+        "name": "福州",
+        "code": "FZS"
+    },
+    {
+        "name": "福州南",
+        "code": "FYS"
+    },
+    {
+        "name": "长沙",
+        "code": "CSQ"
+    },
+    {
+        "name": "长沙南",
+        "code": "CWQ"
+    },
+    {
+        "name": "长沙西",
+        "code": "RXQ"
+    },
+    {
+        "name": "广州南",
+        "code": "IZQ"
+    },
+    {
+        "name": "广州东",
+        "code": "GGQ"
+    },
+    {
+        "name": "广州",
+        "code": "GZQ"
+    },
+    {
+        "name": "广州西",
+        "code": "GXQ"
+    },
+    {
+        "name": "广州北",
+        "code": "GBQ"
+    },
+    {
+        "name": "深圳",
+        "code": "SZQ"
+    },
+    {
+        "name": "深圳西",
+        "code": "OSQ"
+    },
+    {
+        "name": "深圳东",
+        "code": "BJQ"
+    },
+    {
+        "name": "深圳北",
+        "code": "IOQ"
+    },
+    {
+        "name": "深圳坪山",
+        "code": "IFQ"
+    },
+    {
+        "name": "厦门北",
+        "code": "XKS"
+    },
+    {
+        "name": "厦门",
+        "code": "XMS"
+    },
+    {
+        "name": "厦门高崎",
+        "code": "XBS"
+    },
+    {
+        "name": "珠海",
+        "code": "ZHQ"
+    },
+    {
+        "name": "珠海北",
+        "code": "ZIQ"
+    },
+    {
+        "name": "中山北",
+        "code": "ZGQ"
+    },
+    {
+        "name": "中山",
+        "code": "ZSQ"
+    },
+    {
+        "name": "南宁",
+        "code": "NNZ"
+    },
+    {
+        "name": "南宁东",
+        "code": "NFZ"
+    },
+    {
+        "name": "南宁西",
+        "code": "NXZ"
+    },
+    {
+        "name": "昆明",
+        "code": "KMM"
+    },
+    {
+        "name": "昆明西",
+        "code": "KXM"
+    },
+    {
+        "name": "昆明南",
+        "code": "KOM"
+    },
+    {
+        "name": "贵阳",
+        "code": "GIW"
+    },
+    {
+        "name": "贵阳北",
+        "code": "KQW"
+    },
+    {
+        "name": "贵阳东",
+        "code": "KEW"
+    },
+    {
+        "name": "成都东",
+        "code": "ICW"
+    },
+    {
+        "name": "成都南",
+        "code": "CNW"
+    },
+    {
+        "name": "成都",
+        "code": "CDW"
+    },
+    {
+        "name": "重庆北",
+        "code": "CUW"
+    },
+    {
+        "name": "重庆",
+        "code": "CQW"
+    },
+    {
+        "name": "重庆南",
+        "code": "CRW"
+    },
+    {
+        "name": "重庆西",
+        "code": "CXW"
+    },
+    {
+        "name": "西安北",
+        "code": "EAY"
+    },
+    {
+        "name": "西安",
+        "code": "XAY"
+    },
+    {
+        "name": "西安南",
+        "code": "CAY"
+    },
+    {
+        "name": "拉萨",
+        "code": "LSO"
+    },
+    {
+        "name": "西宁",
+        "code": "XNO"
+    },
+    {
+        "name": "兰州东",
+        "code": "LVJ"
+    },
+    {
+        "name": "兰州",
+        "code": "LZJ"
+    },
+    {
+        "name": "兰州西",
+        "code": "LAJ"
+    },
+    {
+        "name": "兰州新区",
+        "code": "LQJ"
+    },
+    {
+        "name": "银川",
+        "code": "YIJ"
+    },
+    {
+        "name": "乌鲁木齐南",
+        "code": "WMR"
+    },
+    {
+        "name": "乌鲁木齐",
+        "code": "WAR"
+    }
+]
